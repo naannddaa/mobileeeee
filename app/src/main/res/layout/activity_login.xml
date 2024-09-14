@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+android:background="@color/blue"
+    tools:ignore="MissingConstraints"
+    >
+
+    <EditText
+        android:id="@+id/t_username"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="244dp"
+        android:drawableStart="@drawable/ic_username"
+        android:background="@drawable/t_field"
+        android:drawablePadding="5dp"
+        android:paddingHorizontal="8dp"
+        android:paddingLeft="2dp"
+        android:text="Insert Your Usermane"
+        android:textColor="@color/black"
+
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/t_password"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@drawable/t_field"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="9dp"
+        android:hint="Inset Password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/cream"
+        android:onClick="GetTextFromSQL"
+        android:text="LOG IN"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="388dp" />
+
+    <TextView
+        android:id="@+id/t_belumpunyakaun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Belum Punya Akun?"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <EditText
+        android:id="@+id/t_registrasi"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:paddingBottom="@null"
+        android:text="Registrasi"
+        android:textColor="@color/cream"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="418dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

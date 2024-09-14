@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:ignore="MissingConstraints"
+    tools:context=".Registrasi">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_longname"
+        android:layout_margin="15dp"/>
+
+
+    <EditText
+        android:id="@+id/t_username"
+        android:layout_width="250dp"
+        android:textColorHint="@color/cream"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/t_field"
+        android:drawableStart="@drawable/ic_username"
+        android:drawablePadding="5dp"
+        android:hint="Insert Username"
+        android:paddingHorizontal="8dp"
+        android:textColor="@color/cream"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/t_longname"
+        app:layout_constraintStart_toStartOf="@+id/t_longname"
+        app:layout_constraintTop_toBottomOf="@+id/t_longname" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/cream"
+        android:src="@color/cream"
+        android:text="LOG IN"
+        android:textColor="@color/blue"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_registrasi"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_registrasi"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registrasi" />
+
+    <EditText
+        android:id="@+id/t_date"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/t_field"
+        android:drawableLeft="@drawable/calendar"
+        android:drawablePadding="6dp"
+        android:hint="Date Of Bird"
+        android:paddingHorizontal="15dp"
+        android:textColorHint="@color/cream"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/t_email"
+        app:layout_constraintStart_toStartOf="@+id/t_email"
+        app:layout_constraintTop_toBottomOf="@+id/t_email" />
+
+    <EditText
+        android:id="@+id/t_phone"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/t_field"
+        android:drawableLeft="@drawable/telp"
+        android:drawablePadding="2dp"
+        android:hint="Insert Phone Number"
+        android:paddingHorizontal="9dp"
+        android:phoneNumber="true"
+        android:textColorHint="@color/cream"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/t_password"
+        app:layout_constraintStart_toStartOf="@+id/t_password"
+        app:layout_constraintTop_toBottomOf="@+id/t_password" />
+
+    <Spinner
+        android:id="@+id/jeniskelamin"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/jenis_kelamin"
+        android:src="@drawable/t_field"
+        app:layout_constraintEnd_toEndOf="@+id/t_gender"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/t_gender"
+        app:layout_constraintTop_toBottomOf="@+id/t_date" />
+
+    <EditText
+        android:id="@+id/t_gender"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:hint="."
+        android:textColorHint="@color/blue"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/t_field"
+        android:drawableStart="@drawable/gender"
+        android:drawablePadding="7dp"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/cream"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/t_date"
+        app:layout_constraintStart_toStartOf="@+id/t_date"
+        app:layout_constraintTop_toBottomOf="@+id/t_date" />
+
+    <EditText
+        android:id="@+id/t_email"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/t_field"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="9dp"
+        android:hint="Insert E-mail"
+        android:paddingHorizontal="15dp"
+        android:textColorHint="@color/cream"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/t_username"
+        app:layout_constraintStart_toStartOf="@+id/t_username"
+        app:layout_constraintTop_toBottomOf="@+id/t_username" />
+
+    <EditText
+        android:id="@+id/t_password"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/t_field"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="8dp"
+        android:hint="Insert Password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="12dp"
+        android:textColorHint="@color/cream"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/t_gender"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="@+id/t_gender"
+        app:layout_constraintTop_toBottomOf="@+id/t_gender" />
+
+    <Button
+        android:id="@+id/btn_registrasi"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/cream"
+        android:src="@color/cream"
+        android:text="REGISTRASI"
+        android:textColor="@color/blue"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/t_addres"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/t_addres"
+        app:layout_constraintTop_toBottomOf="@+id/t_addres" />
+
+    <EditText
+        android:id="@+id/t_addres"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/t_field"
+        android:drawableLeft="@drawable/location"
+        android:drawablePadding="5dp"
+        android:hint="Insert Addres"
+        android:paddingHorizontal="10dp"
+        android:textColorHint="@color/cream"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/t_phone"
+        app:layout_constraintStart_toStartOf="@+id/t_phone"
+        app:layout_constraintTop_toBottomOf="@+id/t_phone" />
+
+    <EditText
+        android:id="@+id/t_longname"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/t_field"
+        android:drawableStart="@drawable/long_name"
+        android:drawableLeft="@drawable/long_name"
+        android:drawablePadding="5dp"
+        android:hint="Insert Full Name"
+        android:paddingHorizontal="8dp"
+        android:textColor="@color/cream"
+        android:textColorHint="@color/cream"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have An Account?"
+        android:textColor="@color/cream"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="592dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
